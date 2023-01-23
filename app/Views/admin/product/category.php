@@ -7,7 +7,7 @@
         <div class="container-fluid px-4">
             <h1 class="mt-4">Product Category</h1>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item"><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="<?= base_url('admin/admin/dashboard') ?>">Dashboard</a></li>
                 <li class="breadcrumb-item active">Product Category</li>
             </ol>
             <div class="card mb-4">
@@ -63,7 +63,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="<?= base_url('product-category/store') ?>" method="post">
+                    <form action="<?= base_url('admin/product-category/store') ?>" method="post">
                         <?= csrf_field() ?>
 
                         <div class="mb-3">
@@ -90,7 +90,7 @@
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="<?= base_url('product-category/edit/' . $categories->category_id) ?>" method="post">
+                        <form action="<?= base_url('admin/product-category/edit/' . $categories->category_id) ?>" method="post">
                             <?= csrf_field() ?>
                             <input type="hidden" name="_method" value="PUT" />
 
@@ -119,7 +119,7 @@
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="<?= base_url('product-category/delete/' . $categories->category_id) ?>" method="post">
+                        <form action="<?= base_url('admin/product-category/delete/' . $categories->category_id) ?>" method="post">
                             <?= csrf_field() ?>
                             <input type="hidden" name="_method" value="DELETE" />
 

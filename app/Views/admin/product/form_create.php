@@ -7,8 +7,8 @@
         <div class="container-fluid px-4">
             <h1 class="mt-4">Add Product</h1>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item"><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
-                <li class="breadcrumb-item active"><a href="<?= base_url('product-list') ?>">Product List</a></li>
+                <li class="breadcrumb-item"><a href="<?= base_url('admin/dashboard') ?>">Dashboard</a></li>
+                <li class="breadcrumb-item active"><a href="<?= base_url('admin/product-list') ?>">Product List</a></li>
                 <li class="breadcrumb-item active">Add Product</li>
             </ol>
             <div class="card mb-4">
@@ -29,7 +29,7 @@
                             <?= session('failed') ?>
                         </div>
                     <?php endif; ?>
-                    <form action="<?= base_url('product-list/add/store') ?>" method="post" enctype="multipart/form-data">
+                    <form action="<?= base_url('admin/product-list/add/store') ?>" method="post" enctype="multipart/form-data">
                         <?= csrf_field() ?>
 
                         <div class="row">

@@ -61,7 +61,7 @@ class ProductController extends BaseController
             'product_image' => $imageName,
         ]);
 
-        return redirect()->to('product-list')->with('success', 'Product successfully added!');
+        return redirect()->to('admin/product-list')->with('success', 'Product successfully added!');
     }
 
     public function form_update($product_id)
@@ -115,7 +115,7 @@ class ProductController extends BaseController
             'product_image' => $imageName,
         ]);
 
-        return redirect()->to('product-list')->with('success', 'Product successfully added!');
+        return redirect()->to('admin/product-list')->with('success', 'Product successfully added!');
     }
 
     public function destroy_product()

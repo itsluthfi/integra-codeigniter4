@@ -31,23 +31,25 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-// route admin dashboard
-$routes->get('dashboard', 'Admin\DashboardController::index');
+$routes->group('admin', static function ($routes) {
+    // route admin dashboard
+    $routes->get('dashboard', 'Admin\DashboardController::index');
 
-// route admin product
-$routes->get('product-list', 'Admin\ProductController::index');
-$routes->get('product-list/add', 'Admin\ProductController::form_create');
-$routes->get('product-list/edit/(:num)', 'Admin\ProductController::form_update/$1');
-$routes->post('product-list/add/store', 'Admin\ProductController::store_product');
-$routes->put('product-list/edit/(:num)/update', 'Admin\ProductController::update_product/$1');
-$routes->delete('product-list/delete', 'Admin\ProductController::destroy_product');
-$routes->get('product-list/detail/(:num)', 'Admin\ProductController::detail_product/$1');
+    // route admin product
+    $routes->get('product-list', 'Admin\ProductController::index');
+    $routes->get('product-list/add', 'Admin\ProductController::form_create');
+    $routes->get('product-list/edit/(:num)', 'Admin\ProductController::form_update/$1');
+    $routes->post('product-list/add/store', 'Admin\ProductController::store_product');
+    $routes->put('product-list/edit/(:num)/update', 'Admin\ProductController::update_product/$1');
+    $routes->delete('product-list/delete', 'Admin\ProductController::destroy_product');
+    $routes->get('product-list/detail/(:num)', 'Admin\ProductController::detail_product/$1');
 
-// route admin category
-$routes->get('product-category', 'Admin\ProductController::category');
-$routes->post('product-category/store', 'Admin\ProductController::store');
-$routes->put('product-category/edit/(:num)', 'Admin\ProductController::update/$1');
-$routes->delete('product-category/delete/(:num)', 'Admin\ProductController::destroy/$1');
+    // route admin category
+    $routes->get('product-category', 'Admin\ProductController::category');
+    $routes->post('product-category/store', 'Admin\ProductController::store');
+    $routes->put('product-category/edit/(:num)', 'Admin\ProductController::update/$1');
+    $routes->delete('product-category/delete/(:num)', 'Admin\ProductController::destroy/$1');
+});
 
 /*
  * --------------------------------------------------------------------

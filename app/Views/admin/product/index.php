@@ -11,7 +11,7 @@
         <div class="container-fluid px-4">
             <h1 class="mt-4">Product List</h1>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item"><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="<?= base_url('admin/dashboard') ?>">Dashboard</a></li>
                 <li class="breadcrumb-item active">Product List</li>
             </ol>
             <div class="card mb-4">
@@ -21,7 +21,7 @@
                 </div>
                 <div class="card-body">
                     <!-- Button trigger page -->
-                    <a href="<?= base_url('product-list/add') ?>" class="btn btn-primary mb-2">
+                    <a href="<?= base_url('admin/product-list/add') ?>" class="btn btn-primary mb-2">
                         <i class="fas fa-plus"></i> Add Product
                     </a>
                     <!-- Show success notification alert -->
@@ -45,8 +45,8 @@
                                     <td><?= $products->category_slug ?></td>
                                     <td><?= $products->created_at ?></td>
                                     <td width="15%" class="text-center">
-                                        <a href="<?= base_url('product-list/detail/' . $products->product_id) ?>" type="button" class="btn btn-info btn-sm"><i class="fas fa-eye"></i> Detail</a>
-                                        <a href="<?= base_url('product-list/edit/' . $products->product_id) ?>" type="button" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</a>
+                                        <a href="<?= base_url('admin/product-list/detail/' . $products->product_id) ?>" type="button" class="btn btn-info btn-sm"><i class="fas fa-eye"></i> Detail</a>
+                                        <a href="<?= base_url('admin/product-list/edit/' . $products->product_id) ?>" type="button" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</a>
                                         <button type="button" class="btn btn-danger btn-sm" onclick="delete_product('<?= $products->product_id ?>')"><i class="fas fa-trash"></i> Delete</button>
                                     </td>
                                 </tr>
@@ -89,7 +89,7 @@
                 if (result.isConfirmed) {
                     $.ajax({
                         type: 'POST',
-                        url: '<?= base_url('product-list/delete') ?>',
+                        url: '<?= base_url('admin/product-list/delete') ?>',
                         data: {
                             _method: 'delete',
                             <?= csrf_token() ?>: "<?= csrf_hash() ?>",
@@ -104,7 +104,7 @@
                                     text: response.success,
                                 }).then((result) => {
                                     if (result.value) {
-                                        window.location.href = ' <?= base_url('product-list') ?>'
+                                        window.location.href = ' <?= base_url('admin/product-list') ?>'
                                     }
                                 });
                             }

@@ -3,7 +3,7 @@
         <div class="sb-sidenav-menu">
             <div class="nav">
                 <div class="sb-sidenav-menu-heading">Core</div>
-                <a class="nav-link" href="<?= base_url('dashboard') ?>">
+                <a class="nav-link" href="<?= base_url('admin/dashboard') ?>">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Dashboard
                 </a>
@@ -14,15 +14,15 @@
                 </a>
                 <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="<?= base_url('product-list') ?>">Product List</a>
-                        <a class="nav-link" href="<?= base_url('product-category') ?>">Product Category</a>
+                        <a class="nav-link" href="<?= base_url('admin/product-list') ?>">Product List</a>
+                        <a class="nav-link" href="<?= base_url('admin/product-category') ?>">Product Category</a>
                     </nav>
                 </div>
                 <a class="nav-link" href="tables.html">
                     <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                     Account
                 </a>
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= base_url('logout') ?>">
                     <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
                     Logout
                 </a>

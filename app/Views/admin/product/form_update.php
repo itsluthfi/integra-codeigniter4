@@ -7,8 +7,8 @@
         <div class="container-fluid px-4">
             <h1 class="mt-4">Edit Product</h1>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item"><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
-                <li class="breadcrumb-item active"><a href="<?= base_url('product-list') ?>">Product List</a></li>
+                <li class="breadcrumb-item"><a href="<?= base_url('admin/dashboard') ?>">Dashboard</a></li>
+                <li class="breadcrumb-item active"><a href="<?= base_url('admin/product-list') ?>">Product List</a></li>
                 <li class="breadcrumb-item active">Edit Product</li>
             </ol>
             <div class="card mb-4">
@@ -29,7 +29,7 @@
                             <?= session('failed') ?>
                         </div>
                     <?php endif; ?>
-                    <form action="<?= base_url('product-list/edit/' . $product->product_id . '/update') ?>" method="post" enctype="multipart/form-data">
+                    <form action="<?= base_url('admin/product-list/edit/' . $product->product_id . '/update') ?>" method="post" enctype="multipart/form-data">
                         <?= csrf_field() ?>
                         <input type="hidden" name="_method" value="PUT" />
                         <input type="hidden" name="oldImage" value="<?= $product->product_image ?>">
@@ -89,12 +89,11 @@
                                 </div>
                             <?php endif; ?>
 
-                            <!-- #error# image not showing, still figure it out -->
                             <img src="<?= base_url('assets-admin/img/' . $product->product_image) ?>" alt="" class="preview-img mt-3" width="200">
                         </div>
                         <div class="justify-content-end d-flex">
                             <button class="btn btn-primary me-2">Edit Product</button>
-                            <a href="<?= base_url('product-list') ?>" class="btn btn-secondary">Back</a>
+                            <a href="<?= base_url('admin/product-list') ?>" class="btn btn-secondary">Back</a>
                         </div>
 
                     </form>
