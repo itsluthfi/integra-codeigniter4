@@ -49,6 +49,12 @@ $routes->group('admin', static function ($routes) {
     $routes->post('product-category/store', 'Admin\ProductController::store');
     $routes->put('product-category/edit/(:num)', 'Admin\ProductController::update/$1');
     $routes->delete('product-category/delete/(:num)', 'Admin\ProductController::destroy/$1');
+
+    // route admin account
+    $routes->get('account', 'Admin\AccountController::index');
+    $routes->post('account/store', 'Admin\AccountController::store');
+    $routes->put('account/edit/(:num)', 'Admin\AccountController::update/$1');
+    $routes->delete('account/delete/(:num)', 'Admin\AccountController::destroy/$1');
 });
 
 /*
