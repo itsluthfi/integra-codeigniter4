@@ -18,6 +18,10 @@
                         <a class="nav-link" href="<?= base_url('admin/product-category') ?>">Product Category</a>
                     </nav>
                 </div>
+                <a class="nav-link" href="<?= base_url('admin/slider') ?>">
+                    <div class="sb-nav-link-icon"><i class="fas fa-image"></i></div>
+                    Slider
+                </a>
                 <a class="nav-link" href="<?= base_url('admin/account') ?>">
                     <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                     Account

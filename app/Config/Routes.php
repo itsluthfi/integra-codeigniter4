@@ -60,6 +60,10 @@ $routes->group('admin', static function ($routes) {
     $routes->post('account/store', 'Admin\AccountController::store');
     $routes->put('account/edit/(:num)', 'Admin\AccountController::update/$1');
     $routes->delete('account/delete/(:num)', 'Admin\AccountController::destroy/$1');
+
+    // route admin slider
+    $routes->get('slider', 'Admin\SliderController::index');
+    $routes->put('slider/edit/(:num)', 'Admin\SliderController::update/$1');
 });
 
 /*

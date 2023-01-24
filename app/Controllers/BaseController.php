@@ -12,6 +12,7 @@ use Psr\Log\LoggerInterface;
 // use model
 use App\Models\CategoryModel;
 use App\Models\ProductModel;
+use App\Models\SliderModel;
 
 /**
  * Class BaseController
@@ -60,5 +61,6 @@ abstract class BaseController extends Controller
         // E.g.: $this->session = \Config\Services::session();
         $this->CategoryModel = new CategoryModel();
         $this->ProductModel = new ProductModel();
+        $this->SliderModel = new SliderModel();
     }
 }

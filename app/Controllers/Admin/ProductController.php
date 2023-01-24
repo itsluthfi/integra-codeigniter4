@@ -107,7 +107,7 @@ class ProductController extends BaseController
         // get slug
         $slug = url_title($this->request->getPost('product_name'), '-', true);
 
-        $this->ProductModel->insert([
+        $this->ProductModel->update($product_id, [
             'product_slug' => $slug,
             'product_name' => esc($this->request->getPost('product_name')),
             'category_slug' => esc($this->request->getPost('category_slug')),
@@ -115,7 +115,7 @@ class ProductController extends BaseController
             'product_image' => $imageName,
         ]);
 
-        return redirect()->to('admin/product-list')->with('success', 'Product successfully added!');
+        return redirect()->to('admin/product-list')->with('success', 'Product successfully updated!');
     }
 
     public function destroy_product()
