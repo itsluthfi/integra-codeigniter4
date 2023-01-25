@@ -64,6 +64,10 @@ $routes->group('admin', static function ($routes) {
     // route admin slider
     $routes->get('slider', 'Admin\SliderController::index');
     $routes->put('slider/edit/(:num)', 'Admin\SliderController::update/$1');
+
+    // route admin team
+    $routes->get('team', 'Admin\TeamController::index');
+    $routes->put('team/edit/(:num)', 'Admin\TeamController::update/$1');
 });
 
 /*

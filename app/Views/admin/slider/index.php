@@ -99,6 +99,12 @@
                                 <label for="slider_image">Slider Image</label>
                                 <input type="file" name="slider_image" id="slider_image" class="form-control <?= isset($validation['slider_image']) ? 'is-invalid' : '' ?>" onchange="previewImg()">
 
+                                <?php if (isset($validation['slider_image'])) : ?>
+                                    <div class="invalid-feedback">
+                                        <?= validation_show_error('slider_image') ?>
+                                    </div>
+                                <?php endif; ?>
+
                                 <img src="<?= base_url('assets-admin/img/' . $sliders->slider_image) ?>" alt="" class="preview-img mt-3" width="200">
                             </div>
                             <div class="modal-footer">

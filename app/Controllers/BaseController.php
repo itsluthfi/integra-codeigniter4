@@ -13,6 +13,7 @@ use Psr\Log\LoggerInterface;
 use App\Models\CategoryModel;
 use App\Models\ProductModel;
 use App\Models\SliderModel;
+use App\Models\TeamModel;
 
 /**
  * Class BaseController
@@ -62,5 +63,6 @@ abstract class BaseController extends Controller
         $this->CategoryModel = new CategoryModel();
         $this->ProductModel = new ProductModel();
         $this->SliderModel = new SliderModel();
+        $this->TeamModel = new TeamModel();
     }
 }

@@ -33,7 +33,7 @@ class SliderController extends BaseController
         // get image
         $image = $this->request->getFile('slider_image');
 
-        if (validation_show_error('product_image') == 4) {
+        if (validation_show_error('slider_image') == 4) {
             $image = $this->request->getPost('oldImage');
         } else {
             // encrypt image name
@@ -42,8 +42,10 @@ class SliderController extends BaseController
             $image->move(WRITEPATH . '../public/assets-admin/img/', $imageName);
 
             if ($imageName == 'test.jpg') {
-                unlink(WRITEPATH . '../public/assets-admin/img/' . $this->request->getPost('oldImage'));
+                // do nothing
             }
+
+            unlink(WRITEPATH . '../public/assets-admin/img/' . $this->request->getPost('oldImage'));
         }
 
         $this->SliderModel->update($slider_id, [
