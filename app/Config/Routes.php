@@ -34,7 +34,7 @@ $routes->set404Override();
 $routes->get('/', 'HomeController::index');
 $routes->get('home', 'HomeController::index');
 $routes->get('inner', 'HomeController::inner');
-$routes->get('portofolio-detail', 'HomeController::portofolio');
+$routes->get('portfolio-details', 'HomeController::portfolio');
 
 $routes->group('admin', static function ($routes) {
     // route admin dashboard

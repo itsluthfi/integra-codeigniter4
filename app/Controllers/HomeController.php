@@ -21,8 +21,8 @@ class HomeController extends BaseController
         return view('user/inner/index');
     }
 
-    public function portofolio()
+    public function portfolio()
     {
-        return view('user/portofolio/detail');
+        return view('user/portfolio/detail');
     }
 }
