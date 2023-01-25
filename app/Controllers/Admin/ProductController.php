@@ -57,7 +57,7 @@ class ProductController extends BaseController
             'product_slug' => $slug,
             'product_name' => esc($this->request->getPost('product_name')),
             'category_slug' => esc($this->request->getPost('category_slug')),
-            'description' => $this->request->getPost('description'),
+            'description' => esc($this->request->getPost('description')),
             'product_image' => $imageName,
         ]);
 
@@ -111,7 +111,7 @@ class ProductController extends BaseController
             'product_slug' => $slug,
             'product_name' => esc($this->request->getPost('product_name')),
             'category_slug' => esc($this->request->getPost('category_slug')),
-            'description' => $this->request->getPost('description'),
+            'description' => esc($this->request->getPost('description')),
             'product_image' => $imageName,
         ]);
 

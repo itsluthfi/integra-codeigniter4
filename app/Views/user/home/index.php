@@ -12,38 +12,17 @@
 
                 <div class="carousel-inner" role="listbox">
 
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active" style="background-image: url(<?= base_url('assets') ?>/img/slide/slide-1.jpg);">
-                        <div class="carousel-container">
-                            <div class="carousel-content">
-                                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Integra</span></h2>
-                                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+                    <?php foreach ($slider as $sliders) : ?>
+                        <div class="carousel-item <?= $sliders->slider_id == 1 ? 'active' : '' ?>" style="background-image: url(<?= base_url('assets-admin/img/' . $sliders->slider_image) ?>);">
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2 class="animate__animated animate__fadeInDown"><?= $sliders->slider_title ?></h2>
+                                    <p class="animate__animated animate__fadeInUp"><?= $sliders->description ?></p>
+                                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="carousel-item" style="background-image: url(<?= base_url('assets') ?>/img/slide/slide-2.jpg);">
-                        <div class="carousel-container">
-                            <div class="carousel-content">
-                                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="carousel-item" style="background-image: url(<?= base_url('assets') ?>/img/slide/slide-3.jpg);">
-                        <div class="carousel-container">
-                            <div class="carousel-content">
-                                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
 
                 </div>
 
@@ -180,38 +159,15 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    <?php foreach ($category as $categories) : ?>
+                        <div class="col-md-6 col-lg-3 align-items-stretch mb-5 mb-lg-0">
+                            <div class="icon-box">
+                                <div class="icon"><i class="bx bx-code-block"></i></div>
+                                <h4 class="title"><a href=""><?= $categories->category_name ?></a></h4>
+                                <!-- div class="d-flex" <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-tachometer"></i></div>
-                            <h4 class="title"><a href="">Magni Dolores</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-world"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                        </div>
-                    </div>
-
+                    <?php endforeach; ?>
                 </div>
 
             </div>
@@ -234,37 +190,24 @@
         <section class="more-services section-bg">
             <div class="container">
 
+                <div class="section-title">
+                    <h2>Our Products</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="card">
-                            <img src="<?= base_url('assets') ?>/img/more-service-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="">Autem sunt earum</a></h5>
-                                <p class="card-text">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore</p>
-                                <a href="#" class="btn">Explore more</a>
+                    <?php foreach ($product as $products) : ?>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-4">
+                            <div class="card">
+                                <img src="<?= base_url('assets-admin/img/' . $products->product_image) ?>" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href=""><?= $products->product_name ?></a></h5>
+                                    <p class="card-text"><?= $products->description ?></p>
+                                    <a href="#" class="btn">Explore more</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="card">
-                            <img src="<?= base_url('assets') ?>/img/more-service-2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="">Nobis et tempore</a></h5>
-                                <p class="card-text">Ut quas omnis est. Non et aut tempora dignissimos similique in dignissimos. Sit incidunt et odit iusto</p>
-                                <a href="#" class="btn">Explore more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="card">
-                            <img src="<?= base_url('assets') ?>/img/more-service-3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="">Facere quia quae dolores</a></h5>
-                                <p class="card-text">Modi ut et delectus. Modi nobis saepe voluptates nostrum. Sed quod consequatur quia provident dera</p>
-                                <a href="#" class="btn">Explore more</a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
 
             </div>
@@ -489,77 +432,24 @@
 
                 <div class="row">
 
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="member">
-                            <img src="<?= base_url('assets') ?>/img/team/team-1.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
-                        <div class="member">
-                            <img src="<?= base_url('assets') ?>/img/team/team-2.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Product Manager</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <?php foreach ($team as $teams) : ?>
+                        <!-- class="d-flex" -->
+                        <div class="col-xl-3 col-lg-4 col-md-6s">
+                            <div class="member">
+                                <img src="<?= base_url('assets-admin/img/' . $teams->team_photo) ?>" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4><?= $teams->team_name ?></h4>
+                                        <span><?= $teams->team_position ?></span>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://<?= $teams->team_fb ?>" target="_blank"><i class="bi bi-facebook"></i></a>
+                                        <a href="https://<?= $teams->team_ig ?>" target="_blank"><i class="bi bi-instagram"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
-                        <div class="member">
-                            <img src="<?= base_url('assets') ?>/img/team/team-3.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>William Anderson</h4>
-                                    <span>CTO</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
-                        <div class="member">
-                            <img src="<?= base_url('assets') ?>/img/team/team-4.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Amanda Jepson</h4>
-                                    <span>Accountant</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
 
                 </div>
 
