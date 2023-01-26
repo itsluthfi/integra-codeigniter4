@@ -18,7 +18,7 @@
                                 <div class="carousel-content">
                                     <h2 class="animate__animated animate__fadeInDown"><?= $sliders->slider_title ?></h2>
                                     <p class="animate__animated animate__fadeInUp"><?= $sliders->description ?></p>
-                                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+                                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Mulai Sekarang</a>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>About Us</h2>
+                    <h2>Tentang Kami</h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
 
@@ -112,8 +112,8 @@
                         <div class="count-box">
                             <i class="bi bi-emoji-smile"></i>
                             <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Happy Clients</strong> consequuntur quae qui deca rode</p>
-                            <a href="#">Find out more &raquo;</a>
+                            <p><strong>Klien Kami</strong> consequuntur quae qui deca rode</p>
+                            <a href="#">Temukan lainnya &raquo;</a>
                         </div>
                     </div>
 
@@ -121,8 +121,8 @@
                         <div class="count-box">
                             <i class="bi bi-journal-richtext"></i>
                             <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Projects</strong> adipisci atque cum quia aut numquam delectus</p>
-                            <a href="#">Find out more &raquo;</a>
+                            <p><strong>Project</strong> adipisci atque cum quia aut numquam delectus</p>
+                            <a href="#">Temukan lainnya &raquo;</a>
                         </div>
                     </div>
 
@@ -130,8 +130,8 @@
                         <div class="count-box">
                             <i class="bi bi-headset"></i>
                             <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Hours Of Support</strong> aut commodi quaerat. Aliquam ratione</p>
-                            <a href="#">Find out more &raquo;</a>
+                            <p><strong>Waktu Layanan</strong> aut commodi quaerat. Aliquam ratione</p>
+                            <a href="#">Temukan lainnya &raquo;</a>
                         </div>
                     </div>
 
@@ -139,8 +139,8 @@
                         <div class="count-box">
                             <i class="bi bi-people"></i>
                             <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                            <p><strong>Hard Workers</strong> rerum asperiores dolor molestiae doloribu</p>
-                            <a href="#">Find out more &raquo;</a>
+                            <p><strong>Developer Profesional</strong> rerum asperiores dolor molestiae doloribu</p>
+                            <a href="#">Temukan lainnya &raquo;</a>
                         </div>
                     </div>
 
@@ -154,7 +154,7 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Our Services</h2>
+                    <h2>Layanan Kami</h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
 
@@ -191,7 +191,7 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Our Products</h2>
+                    <h2>Produk Kami</h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
 
@@ -273,7 +273,7 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Our Portfolio</h2>
+                    <h2>Portfolio Kami</h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
 
@@ -426,7 +426,7 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Our Team</h2>
+                    <h2>Tim Kami</h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
 
@@ -461,7 +461,7 @@
 
             <div class="container">
                 <div class="section-title">
-                    <h2>Contact Us</h2>
+                    <h2>Kontak Kami</h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
             </div>
@@ -476,22 +476,22 @@
 
                             <div class="col-lg-6 info d-flex flex-column align-items-stretch">
                                 <i class="bx bx-map"></i>
-                                <h4>Address</h4>
+                                <h4>Alamat</h4>
                                 <p>A108 Adam Street,<br>New York, NY 535022</p>
                             </div>
                             <div class="col-lg-6 info info-bg d-flex flex-column align-items-stretch">
                                 <i class="bx bx-phone"></i>
-                                <h4>Call Us</h4>
+                                <h4>Hubungi Kami</h4>
                                 <p>+1 5589 55488 55<br>+1 5589 22548 64</p>
                             </div>
                             <div class="col-lg-6 info info-bg d-flex flex-column align-items-stretch">
                                 <i class="bx bx-envelope"></i>
-                                <h4>Email Us</h4>
+                                <h4>Email Kami</h4>
                                 <p>contact@example.com<br>info@example.com</p>
                             </div>
                             <div class="col-lg-6 info d-flex flex-column align-items-stretch">
                                 <i class="bx bx-time-five"></i>
-                                <h4>Working Hours</h4>
+                                <h4>Jam Kerja</h4>
                                 <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
                             </div>
                         </div>
@@ -502,11 +502,11 @@
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="name">Your Name</label>
+                                    <label for="name">Nama Anda</label>
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <label for="email">Your Email</label>
+                                    <label for="email">Email Anda</label>
                                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                                 </div>
                             </div>
@@ -515,7 +515,7 @@
                                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                             </div>
                             <div class="form-group mt-3">
-                                <label for="message">Message</label>
+                                <label for="message">Pesan</label>
                                 <textarea class="form-control" name="message" rows="8" required></textarea>
                             </div>
                             <div class="my-3">
@@ -523,7 +523,7 @@
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button type="submit">Kirim Pesan</button></div>
                         </form>
                     </div>
 

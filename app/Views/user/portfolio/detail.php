@@ -9,11 +9,11 @@
             <div class="container">
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Portfolio Details</h2>
+                    <h2>Detail Portfolio</h2>
                     <ol>
                         <li><a href="<?= base_url('home') ?>">Home</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li>Portfolio Details</li>
+                        <li>Detail Portfolio</li>
                     </ol>
                 </div>
 
@@ -49,16 +49,16 @@
 
                     <div class="col-lg-4">
                         <div class="portfolio-info">
-                            <h3>Project information</h3>
+                            <h3>Informasi Project</h3>
                             <ul>
-                                <li><strong>Category</strong>: Web design</li>
-                                <li><strong>Client</strong>: ASU Company</li>
-                                <li><strong>Project date</strong>: 01 March, 2020</li>
-                                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                                <li><strong>Kategori</strong>: Web design</li>
+                                <li><strong>Klien</strong>: ASU Company</li>
+                                <li><strong>Tanggal Project</strong>: 01 March, 2020</li>
+                                <li><strong>URL Project</strong>: <a href="#">www.example.com</a></li>
                             </ul>
                         </div>
                         <div class="portfolio-description">
-                            <h2>This is an example of portfolio detail</h2>
+                            <h2>Contoh Nama Project</h2>
                             <p>
                                 Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
                             </p>

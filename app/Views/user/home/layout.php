@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Integra</title>
+    <title>IT Consultant & Software Developer - Integra</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="<?= base_url('assets') ?>/img/favicon.png" rel="icon">
+    <link href="<?= base_url('assets') ?>/img/logo-integra.png" rel="icon">
     <link href="<?= base_url('assets') ?>/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -42,18 +42,18 @@
     <div class="container d-flex align-items-center justify-content-between">
 
         <div class="logo">
-            <h1 class="text-light"><a href="<?= base_url('/') ?>"><span>Integra</span></a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="<?= base_url('assets') ?>/img/logo.png" alt="" class="img-fluid"></a>-->
+            <!-- <h1 class="text-light"><a href="<?= base_url('/') ?>"><span>Integra</span></a></h1> -->
+            <!-- Uncomment above if you prefer to use an text logo -->
+            <a href="<?= base_url('/') ?>"><img src="<?= base_url('assets') ?>/img/logo-integra.png" alt="" class="img-fluid"></a>
         </div>
 
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a class="nav-link scrollto active" href="<?= base_url('home') ?>">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
+                <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
                 <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                <li><a class="nav-link scrollto" href="#team">Tim</a></li>
                 <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
@@ -71,7 +71,7 @@
                         <li><a href="#">Drop Down 4</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -105,32 +105,31 @@
                 </div>
 
                 <div class="col-lg-2 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
+                    <h4>Tautan</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang kami</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Layanan</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Persyaratan layanan</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Kebijakan pribadi</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Services</h4>
+                    <h4>Layanan Kami</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">IT Consultant</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web App Development</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Mobile App Development</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Training</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-4 col-md-6 footer-newsletter">
-                    <h4>Our Newsletter</h4>
+                    <h4>Buletin Kami</h4>
                     <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                     <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                        <input type="email" name="email"><input type="submit" value="Langganan">
                     </form>
 
                 </div>
