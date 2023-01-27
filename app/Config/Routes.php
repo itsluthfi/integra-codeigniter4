@@ -65,6 +65,15 @@ $routes->group('admin', static function ($routes) {
     $routes->get('slider', 'Admin\SliderController::index');
     $routes->put('slider/edit/(:num)', 'Admin\SliderController::update/$1');
 
+    // route admin portfolio
+    $routes->get('portfolio', 'Admin\PortfolioController::index');
+    $routes->get('portfolio/add', 'Admin\PortfolioController::form_create');
+    $routes->get('portfolio/edit/(:num)', 'Admin\PortfolioController::form_update/$1');
+    $routes->post('portfolio/add/store', 'Admin\PortfolioController::store_portfolio');
+    $routes->put('portfolio/edit/(:num)/update', 'Admin\PortfolioController::update_portfolio/$1');
+    $routes->delete('portfolio/delete', 'Admin\PortfolioController::destroy_portfolio');
+    $routes->get('portfolio/detail/(:any)', 'Admin\PortfolioController::detail_portfolio/$1');
+
     // route admin team
     $routes->get('team', 'Admin\TeamController::index');
     $routes->put('team/edit/(:num)', 'Admin\TeamController::update/$1');
