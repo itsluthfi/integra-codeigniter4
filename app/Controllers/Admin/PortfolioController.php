@@ -148,8 +148,13 @@ class PortfolioController extends BaseController
         }
     }
 
-    public function detail_portfolio($portfolio_id)
+    public function detail_portfolio($portfolio_slug)
     {
-        //
+        $data = [
+            'title' => 'Detail Portfolio',
+            'portfolio' => $this->PortfolioModel->find($portfolio_slug),
+        ];
+
+        return view('admin/portfolio/detail', $data);
     }
 }

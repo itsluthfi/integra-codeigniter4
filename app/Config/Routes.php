@@ -72,7 +72,7 @@ $routes->group('admin', static function ($routes) {
     $routes->post('portfolio/add/store', 'Admin\PortfolioController::store_portfolio');
     $routes->put('portfolio/edit/(:num)/update', 'Admin\PortfolioController::update_portfolio/$1');
     $routes->delete('portfolio/delete', 'Admin\PortfolioController::destroy_portfolio');
-    $routes->get('portfolio/detail/(:any)', 'Admin\PortfolioController::detail_portfolio/$1');
+    $routes->get('portfolio/detail/(:num)', 'Admin\PortfolioController::detail_portfolio/$1');
 
     // route admin team
     $routes->get('team', 'Admin\TeamController::index');
